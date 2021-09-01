@@ -1,6 +1,7 @@
 # Getting started
 
-Download the repo
+NextJs ^11
+Download the repo 
 
 ```sh
 npm i
