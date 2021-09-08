@@ -1,6 +1,8 @@
 const withPlugins = require('next-compose-plugins');
+const nextTranslate = require('next-translate')
 
-const nextConfig = {
+
+const nextConfig = nextTranslate({
     webpack: (config, { webpack }) => {
       config.plugins.push(
         new webpack.EnvironmentPlugin({
@@ -9,6 +11,6 @@ const nextConfig = {
       );
       return config;
     },
-  };
+  });
   
 module.exports = withPlugins([{ trailingSlash: true }], nextConfig);

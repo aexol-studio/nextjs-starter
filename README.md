@@ -21,3 +21,7 @@ NEXT_PUBLIC_HOST=https://somegraphqlbackend.com/graphql
 ## Concepts
 
 This repo boilerplate uses nextjs TypeScript Emotion and zeus
+
+## Installed library:
+
+    https://github.com/vinissimus/next-translate - translator lib
