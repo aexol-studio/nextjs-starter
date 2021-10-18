@@ -1,7 +1,0 @@
-{
-    "locales": ["en", "pl"],
-    "defaultLocale": "en",
-    "pages": {
-    "*": ["translations"]
-}
-}

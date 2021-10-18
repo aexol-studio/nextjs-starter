@@ -6,8 +6,11 @@
         "dev": "dotenv -e .env.development -- next dev",
         "build:development": "dotenv -e .env.development -- next build && next export",
         "build:production": "dotenv -e .env.production -- next build && next export",
+        "export": "next export",
+        "zeus": "zeus https://linktoyourschema.com/graphql --ts ./",
+        "build": "next build",
         "start": "next start",
-        "zeus": "zeus https://linktoyourschema.com/graphql --ts ./"
+        "out": "dotenv -e .env.development --  npm run build && npm run export"
     },
     "dependencies": {
         "@emotion/css": "^11.1.3",
@@ -19,7 +22,6 @@
         "next": "^11.0.1",
         "next-compose-plugins": "^2.2.1",
         "next-optimized-images": "^3.0.0-canary.10",
-        "next-translate": "^1.0.7",
         "optimized-images-loader": "^0.4.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
