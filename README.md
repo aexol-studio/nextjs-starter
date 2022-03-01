@@ -38,11 +38,11 @@ NEXT_PUBLIC_HOST=https://somegraphqlbackend.com/graphql
 
 1. Install tailwindcss and its peer dependencies: 
     ```sh
-    `npm install -D tailwindcss postcss autoprefixer`
+    npm install -D tailwindcss postcss autoprefixer
     ```
 2. Run the init command to generate both `tailwind.config.js` and `postcss.config.js`: 
     ```sh
-    `npx tailwindcss init -p`
+    npx tailwindcss init -p
     ```
 
 3. Configure `tailwind.config.js` file: 
@@ -69,7 +69,7 @@ module.exports = {
 
 5. Install `tailwind-styled-components`:
     ```sh
-    `npm i tailwind-styled-components`
+    npm i tailwind-styled-components
     ```
 
 6. Now you can use tailwind-styled-components:
