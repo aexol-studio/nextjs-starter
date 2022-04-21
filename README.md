@@ -8,7 +8,7 @@
 
 # Getting started
 
-this is **aexol-nextjjs-starter**
+this is **nomtek-nextjjs-starter**
 Best nextjs setup if you are starting a new project
 
 Download the repo
