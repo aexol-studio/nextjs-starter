@@ -1,5 +1,5 @@
 {
-    "name": "@aexol/next-js-starter",
+    "name": "@nomtek/next-js-starter",
     "version": "0.0.0",
     "private": true,
     "scripts": {
@@ -10,21 +10,21 @@
         "zeus": "zeus https://linktoyourschema.com/graphql --ts ./"
     },
     "dependencies": {
-        "@emotion/css": "^11.7.1",
-        "@emotion/react": "^11.8.1",
+        "@emotion/css": "^11.9.0",
+        "@emotion/react": "^11.9.0",
         "@emotion/styled": "^11.8.1",
-        "dotenv-cli": "^5.0.0",
+        "dotenv-cli": "^5.1.0",
         "gray-matter": "^4.0.3",
-        "next": "^12.1.0",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
+        "next": "^12.1.5",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
         "remark": "^14.0.2",
         "remark-html": "^15.0.1"
     },
     "devDependencies": {
-        "@types/node": "^17.0.21",
-        "@types/react": "^17.0.39",
-        "graphql-zeus": "^4.0.4",
-        "typescript": "^4.5.5"
+        "@types/node": "^17.0.25",
+        "@types/react": "^18.0.5",
+        "graphql-zeus": "^5.0.0",
+        "typescript": "^4.6.3"
     }
 }

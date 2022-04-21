@@ -1,14 +1,15 @@
 ## Table of contents
-* [Getting started](#getting-started)
-* [Envs](#envs)
-* [Add Tailwind-Css-Components](#add-tailwind-css-components)
-* [Concepts](#concepts)
-* [Added Library](#added-library)
+
+- [Getting started](#getting-started)
+- [Envs](#envs)
+- [Add Tailwind-Css-Components](#add-tailwind-css-components)
+- [Concepts](#concepts)
+- [Added Library:](#added-library)
 
 # Getting started
 
 this is **aexol-nextjjs-starter**
-Best nextjs setup if you are starting a new project 
+Best nextjs setup if you are starting a new project
 
 Download the repo
 
@@ -36,16 +37,18 @@ NEXT_PUBLIC_HOST=https://somegraphqlbackend.com/graphql
 
 # Add Tailwind-Css-Components
 
-1. Install tailwindcss and its peer dependencies: 
+1. Install tailwindcss and its peer dependencies:
     ```sh
     npm install -D tailwindcss postcss autoprefixer
     ```
-2. Run the init command to generate both `tailwind.config.js` and `postcss.config.js`: 
+2. Run the init command to generate both `tailwind.config.js` and `postcss.config.js`:
+
     ```sh
     npx tailwindcss init -p
     ```
 
-3. Configure `tailwind.config.js` file: 
+3. Configure `tailwind.config.js` file:
+
 ```sh
 module.exports = {
     mode: 'jit',
@@ -60,7 +63,9 @@ module.exports = {
     plugins: [],
 };
 ```
+
 4. Add the Tailwind directives to `./styles/global.css`:
+
 ```sh
 @tailwind base;
 @tailwind components;
@@ -68,6 +73,7 @@ module.exports = {
 ```
 
 5. Install `tailwind-styled-components`:
+
     ```sh
     npm i tailwind-styled-components
     ```
@@ -88,11 +94,12 @@ module.exports = {
 
 # Concepts
 
-This repo boilerplate uses: 
-- NextJs ^12
-- TypeScript
-- Emotion
-- Zeus
+This repo boilerplate uses:
+
+-   NextJs ^12
+-   TypeScript
+-   Emotion
+-   Zeus
 
 # Added Library:
 

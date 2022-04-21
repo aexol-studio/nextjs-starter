@@ -2,24 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { CustomHelmet } from '@/src/components';
 
-export const siteTitle = 'Next.js Sample Website';
-
 interface LayoutProps {
-    home?: boolean;
     pageTitle?: string;
+    children?: React.ReactNode;
 }
-
-const Header = styled.header`
-    display: flex;
-    height: 150px;
-    width: 100%;
-    background-color: aliceblue;
-    align-items: center;
-
-    p {
-        margin-right: 25px;
-    }
-`;
 
 const Container = styled.div`
     display: flex;
@@ -27,18 +13,11 @@ const Container = styled.div`
     align-items: center;
 `;
 
-export const Layout: React.FC<LayoutProps> = ({ children, home, pageTitle }) => {
+export const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
     return (
-        <div>
+        <>
             <CustomHelmet pageTitle={pageTitle ? pageTitle : undefined} />
-            <Header>
-                <p>Nav Link</p>
-                <p>Nav Link</p>
-                <p>Nav Link</p>
-                <p>Nav Link</p>
-                <p>Nav Link</p>
-            </Header>
             <Container>{children}</Container>
-        </div>
+        </>
     );
 };
