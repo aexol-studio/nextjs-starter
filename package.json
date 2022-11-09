@@ -1,30 +1,35 @@
 {
     "name": "@aexol/next-js-starter",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": true,
     "scripts": {
-        "dev": "dotenv -e .env.development -- next dev",
-        "build:development": "dotenv -e .env.development -- next build && next export",
-        "build:production": "dotenv -e .env.production -- next build && next export",
+        "dev": "next dev",
+        "build": "next build && next export",
         "start": "next start",
-        "zeus": "zeus https://linktoyourschema.com/graphql ./"
+        "zeus": "zeus https://linktoyourschema.com/graphql ./",
+        "lint": "next lint"
     },
     "dependencies": {
-        "@emotion/css": "^11.9.0",
-        "@emotion/react": "^11.9.3",
-        "@emotion/styled": "^11.9.3",
-        "dotenv-cli": "^6.0.0",
+        "@emotion/core": "^11.0.0",
+        "@emotion/css": "^11.10.5",
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
         "gray-matter": "^4.0.3",
-        "next": "^12.2.2",
+        "next": "^13.0.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "remark": "^14.0.2",
-        "remark-html": "^15.0.1"
+        "remark-html": "^15.0.1",
+        "unstated-next": "^1.1.0"
     },
     "devDependencies": {
-        "@types/node": "^18.0.3",
-        "@types/react": "^18.0.15",
-        "graphql-zeus": "^5.1.7",
-        "typescript": "^4.7.4"
+        "@types/node": "^18.11.9",
+        "@types/react": "^18.0.25",
+        "eslint": "8.27.0",
+        "eslint-config-next": "13.0.2",
+        "eslint-plugin-react": "^7.31.10",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "graphql-zeus": "^5.2.0",
+        "typescript": "^4.8.4"
     }
 }

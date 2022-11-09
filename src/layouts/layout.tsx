@@ -5,8 +5,8 @@ import { CustomHelmet } from '@/src/components';
 export const siteTitle = 'Next.js Sample Website';
 
 interface LayoutProps {
-    home?: boolean;
     pageTitle?: string;
+    children: React.ReactNode;
 }
 
 const Header = styled.header`
@@ -27,7 +27,7 @@ const Container = styled.div`
     align-items: center;
 `;
 
-export const Layout: React.FC<LayoutProps> = ({ children, home, pageTitle }) => {
+export const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
     return (
         <div>
             <CustomHelmet pageTitle={pageTitle ? pageTitle : undefined} />

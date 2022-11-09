@@ -1,7 +1,7 @@
 import { Layout } from '../../layouts/layout';
 import { getAllPostIds, getPostData } from '../../../lib/posts';
 
-export default ({ postData }: UnwrapStaticPromiseProps<typeof getStaticProps>) => {
+const Page = ({ postData }: UnwrapStaticPromiseProps<typeof getStaticProps>) => {
     return (
         <Layout pageTitle={postData.title}>
             <article>
@@ -37,3 +37,5 @@ export const getStaticProps = async ({
         },
     };
 };
+
+export default Page;
