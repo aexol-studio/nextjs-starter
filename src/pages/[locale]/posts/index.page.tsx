@@ -6,7 +6,6 @@ import {
   import {  LanguageSwitcher, TestMolecules } from '@/src/components';
   import { useTranslation } from 'next-i18next';
   import { useRouter } from 'next/router';
-  import { StaticProps } from '@/src/util/staticPropsHelper';
   import React from 'react';
 import { LogoAexol } from '@/src/assets';
 import Link from 'next/link';
@@ -15,6 +14,7 @@ import { Layout } from '@/src/layouts';
 import aexol_logo from '@/public/images/aexol_logo.svg';
 import aexol_full_logo from '@/public/images/aexol_full_logo.png';
 import Image from 'next/image';
+import type { InferGetStaticPropsType} from 'next'
 
 const ALink = styled.div`
     a {
@@ -22,7 +22,7 @@ const ALink = styled.div`
     }
 `;
   
-  export const Index: React.FC<StaticProps<typeof getStaticProps>> = (props) => {
+  export const Index:React.FC<InferGetStaticPropsType<typeof getStaticProps>>= (props) => {
     const { t } = useTranslation('common');
     const { query } = useRouter();
     const { locale } = query;

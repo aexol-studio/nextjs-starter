@@ -1,5 +1,5 @@
-import { Layout } from '../../../layouts/layout';
-import { getAllPostIds, getPostData } from '../../../../lib/posts';
+import { Layout } from '@/src/layouts/layout';
+import { getAllPostIds, getPostData } from '@/lib/posts';
 
 
 const Page = ({ postData }: UnwrapStaticPromiseProps<typeof getStaticProps>) => {

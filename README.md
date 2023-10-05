@@ -1,22 +1,26 @@
+# Next.js Export Starter
+
+This project is designed to help you quickly set up a Next.js application.
+It is designed to be flexible when it comes to deployment. While it works seamlessly with Vercel's serverless functions, you can also deploy it to other hosting providers or your own server.
+This starter will streamline your development process.
+
+
 ## Table of contents
 * [Getting started](#getting-started)
-* [Envs](#envs)
-* [Add Tailwind-Css-Components](#add-tailwind-css-components)
-* [Concepts](#concepts)
-* [Added Library](#added-library)
+* [Page naming convention](#page-naming-convention)
+* [Internationalization with i18next](#internationalization-with-i18next)
 
-# Getting started
 
-this is **aexol-nextjjs-starter**
-Best nextjs setup if you are starting a new project 
+## Getting started
 
-Download the repo
+1. Clone the repository.
+2. Install dependencies: 
 
 ```sh
 npm i
 ```
 
-Run your develop environment
+3. Run your develop environment:
 
 ```sh
 npm run dev
@@ -26,74 +30,20 @@ npm run dev
 localhost:3000/
 ```
 
-# Envs
+## Page naming convention
 
-Create Your own .env.development and .env.production files in root folder to define environment variables for development and production in this format:
+In this starter, we follow a naming convention for pages that aligns with DDD (Domain-driven design) principles. Each page file is named using the format `page-name.page.tsx`, where `page-name` represents the name of the page or route. For example, the main page of your application could be named `index.page.tsx`.
+Using this naming convention helps maintain a clean and organized folder structure that reflects the structure of your application's domains or features. By separating pages into their respective folders and adopting a consistent naming convention, you can easily locate and manage your application's routes.
 
-```sh
-NEXT_PUBLIC_HOST=https://somegraphqlbackend.com/graphql
-```
 
-# Add Tailwind-Css-Components
+## Internationalization with i18next
 
-1. Install tailwindcss and its peer dependencies: 
-    ```sh
-    npm install -D tailwindcss postcss autoprefixer
-    ```
-2. Run the init command to generate both `tailwind.config.js` and `postcss.config.js`: 
-    ```sh
-    npx tailwindcss init -p
-    ```
+In this project, we have integrated i18next to make it easy for you to create multi-language websites. Here's how we use i18next:
 
-3. Configure `tailwind.config.js` file: 
-```sh
-module.exports = {
-    mode: 'jit',
-    purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
-    },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
-};
-```
-4. Add the Tailwind directives to `./styles/global.css`:
-```sh
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+1. **Translation Files**: We maintain separate JSON translation files for each supported language. These files contain translation keys and their corresponding localized text.
+   For example, you might find the English translation file for home page at `public/locales/en/homePage.json`
 
-5. Install `tailwind-styled-components`:
-    ```sh
-    npm i tailwind-styled-components
-    ```
+2. **Locale Configuration**: We configure i18next to load the appropriate translation files based on the user's selected locale.
 
-6. Now you can use tailwind-styled-components:
-    ```sh
-    import tw from 'tailwind-styled-components';
-    ```
-    ```sh
-    <H1>Tailwind Styled Component!</H1>
-    ```
-    ```sh
-    const H1 = tw.h1`
-    text-xl
-    text-green-500
-    `;
-    ```
+3. **Integration with React**: We use the `react-i18next` package to integrate i18next with React components, making it seamless to access translations in your React components.
 
-# Concepts
-
-This repo boilerplate uses: 
-- NextJs ^12
-- TypeScript
-- Emotion
-- Zeus
-
-# Added Library:
-
-1. @emotion/css - https://github.com/emotion-js/emotion
