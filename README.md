@@ -9,6 +9,7 @@ This starter will streamline your development process.
 * [Getting started](#getting-started)
 * [Page naming convention](#page-naming-convention)
 * [Internationalization with i18next](#internationalization-with-i18next)
+* [Useful links](#useful-links)
 
 
 ## Getting started
@@ -47,3 +48,9 @@ In this project, we have integrated i18next to make it easy for you to create mu
 
 3. **Integration with React**: We use the `react-i18next` package to integrate i18next with React components, making it seamless to access translations in your React components.
 
+## Useful Links
+
+- [i18next Documentation](https://www.i18next.com/)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
