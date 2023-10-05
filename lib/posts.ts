@@ -51,16 +51,23 @@ export function getSortedPostsData() {
     });
 }
 
-export function getAllPostIds() {
+export function getAllPostIds(locales:string[]) {
     const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames.map((fileName) => {
-        return {
-            params: {
-                id: fileName.replace(/\.md$/, ''),
-            },
-        };
-    });
-}
+    const ids = [];
+  
+    for (const locale of locales) {
+      ids.push(
+        ...fileNames.map((fileName) => ({
+          params: {
+            id: fileName.replace(/\.md$/, ''),
+            locale,
+          },
+        }))
+      );
+    }
+  
+    return ids;
+  }
 
 export async function getPostData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`);
