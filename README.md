@@ -1,8 +1,11 @@
-# Next.js Export Starter
+# Next.js Starter
 
 This project is designed to help you quickly set up a Next.js application.
-It is designed to be flexible when it comes to deployment. While it works seamlessly with Vercel's serverless functions, you can also deploy it to other hosting providers or your own server.
-This starter will streamline your development process.
+This starter is built with flexibility in mind, allowing you to choose how you want to deploy your Next.js application:
+
+- **next export**: You can easily export your application as static HTML and assets using Next.js's `next export` feature. This makes it suitable for hosting on platforms like GitHub Pages, Netlify, your own server, or any other static hosting provider.
+
+- **Vercel or other hosting providers**: If you prefer serverless deployments, this starter seamlessly integrates with Vercel's serverless functions, providing a powerful hosting solution.
 
 
 ## Table of contents
