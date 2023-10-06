@@ -38,7 +38,14 @@ select {
 html {
     font-size: 62.5%;
     text-size-adjust: none;
-    -webkit-text-size-adjust: none;
+    font-smooth: always;
+    -webkit-text-size-adjust: 100%;
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  
 }
 @media (max-width: 1230px) {
     html {

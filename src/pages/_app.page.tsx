@@ -1,6 +1,7 @@
 import '../styles/global.css';
 import { AppProps } from 'next/app';
 import { UseCounterProvider } from '@/src/hooks';
+import { appWithTranslation } from 'next-i18next';
 
 const App = ({ Component, pageProps }: AppProps) => {
     return (
@@ -10,4 +11,4 @@ const App = ({ Component, pageProps }: AppProps) => {
     );
 };
 
-export default App;
+export default appWithTranslation(App);

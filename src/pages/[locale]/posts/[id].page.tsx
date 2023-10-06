@@ -1,5 +1,6 @@
-import { Layout } from '../../layouts/layout';
-import { getAllPostIds, getPostData } from '../../../lib/posts';
+import { Layout } from '@/src/layouts/layout';
+import { getAllPostIds, getPostData } from '@/lib/posts';
+
 
 const Page = ({ postData }: UnwrapStaticPromiseProps<typeof getStaticProps>) => {
     return (
@@ -15,13 +16,16 @@ const Page = ({ postData }: UnwrapStaticPromiseProps<typeof getStaticProps>) => 
     );
 };
 
+
 export async function getStaticPaths() {
-    const paths = getAllPostIds();
+    const locales = ['pl', 'en'];
+    const postIds = getAllPostIds(locales);
+  
     return {
-        paths,
-        fallback: false,
+      paths: postIds,
+      fallback: false,
     };
-}
+  }
 
 export const getStaticProps = async ({
     params,
@@ -37,5 +41,6 @@ export const getStaticProps = async ({
         },
     };
 };
+
 
 export default Page;

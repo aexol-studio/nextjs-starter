@@ -21,7 +21,8 @@
     "paths": {
       "@/*": [
         "./*"
-      ]
+      ],
+      "public": ["/*"]
     },
     "incremental": true
   },
@@ -30,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     "./src/**/*",
-    "types.d.ts"
+    "types.d.ts",
+    "scripts"
   ],
   "exclude": [
     "node_modules"
